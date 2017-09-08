@@ -15,11 +15,11 @@ public class Figura{
         area=0;
     }
     
-    public void CalcularArea(){
+    public void calcularArea(){
         System.out.println("no se como calcular el area porque no se de que figura se tratre");
     }
     
-    public void imprimrArea(){
+    public void imprimirArea(){
     System.out.println("el area es: "+area);
     }
 }
