@@ -7,9 +7,11 @@
 public class Circulo extends Figura{
 
         private float radio;
+        private float perimetro;
         
         public Circulo(float unRadio){
             radio=unRadio;
+            perimetro=0;
         }
         
         /**
@@ -19,5 +21,13 @@ public class Circulo extends Figura{
         public void calcularArea(){
             area= 3.14f * radio * radio;
         
+        }
+        
+        /**
+         * metodo que saca el perimetro y tambien se hace por herencia xd
+         */
+        @Override
+        public void calcularPerimetro(){
+            perimetro= 2 * 3.1416f * radio;
         }
 }

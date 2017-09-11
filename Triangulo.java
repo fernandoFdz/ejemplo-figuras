@@ -1,17 +1,19 @@
 /**
  * Esta clase representa objetos circulo con un radio
  * @author Fernando Granja 
- * @version 1.0 (8-septiembre-2017)
+ * @version 1.0 (10-septiembre-2017)
  */
 
 public class Triangulo extends Figura{
 
         private float base;
         private float altura;
+        private float perimetro;
         
         public Triangulo(float unaBase, float unaAltura){
             base=unaBase;
             altura=unaAltura;
+            perimetro=0;
         }
         
         /**
@@ -21,5 +23,10 @@ public class Triangulo extends Figura{
         public void calcularArea(){
             area= base * altura;
         
+        }
+        
+        @Override
+        public void calcularPerimetro(){
+            perimetro=(2 * altura) + base;
         }
 }
